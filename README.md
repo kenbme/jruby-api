@@ -1,1 +1,1 @@
-Projeto com JRuby 9.4 e Rails 7.2
+Projeto com JRuby 10 e Rails 7.2
