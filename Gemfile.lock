@@ -5,10 +5,10 @@ GIT
   specs:
     activerecord-jdbc-adapter (72.2-java)
       activerecord (~> 7.2.2)
-    activerecord-jdbcsqlite3-adapter (72.2-java)
+    activerecord-jdbcpostgresql-adapter (72.2-java)
       activerecord-jdbc-adapter (= 72.2)
-      jdbc-sqlite3 (~> 3.8, < 4)
-    jdbc-sqlite3 (3.46.1.1)
+      jdbc-postgres (>= 9.4, < 43)
+    jdbc-postgres (42.7.1)
 
 GEM
   remote: https://rubygems.org/
@@ -207,7 +207,7 @@ PLATFORMS
   universal-java-25
 
 DEPENDENCIES
-  activerecord-jdbcsqlite3-adapter!
+  activerecord-jdbcpostgresql-adapter!
   puma
   rails (~> 7.2)
   tzinfo-data
