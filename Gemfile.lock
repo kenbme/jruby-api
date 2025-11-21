@@ -1,15 +1,3 @@
-GIT
-  remote: https://github.com/jruby/activerecord-jdbc-adapter.git
-  revision: a7eb45302d7ab88c90f360850e978e3c0deda4c1
-  branch: 72-stable
-  specs:
-    activerecord-jdbc-adapter (72.2-java)
-      activerecord (~> 7.2.2)
-    activerecord-jdbcpostgresql-adapter (72.2-java)
-      activerecord-jdbc-adapter (= 72.2)
-      jdbc-postgres (>= 9.4, < 43)
-    jdbc-postgres (42.7.1)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -68,6 +56,11 @@ GEM
       activemodel (= 7.2.3)
       activesupport (= 7.2.3)
       timeout (>= 0.4.0)
+    activerecord-jdbc-adapter (72.1-java)
+      activerecord (~> 7.2.2)
+    activerecord-jdbcpostgresql-adapter (72.1-java)
+      activerecord-jdbc-adapter (= 72.1)
+      jdbc-postgres (>= 9.4, < 43)
     activestorage (7.2.3)
       actionpack (= 7.2.3)
       activejob (= 7.2.3)
@@ -108,6 +101,7 @@ GEM
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     jar-dependencies (0.5.5)
+    jdbc-postgres (42.7.8)
     logger (1.7.0)
     loofah (2.24.1)
       crass (~> 1.0.2)
@@ -120,7 +114,7 @@ GEM
       net-smtp
     marcel (1.1.0)
     mini_mime (1.1.5)
-    minitest (5.26.1)
+    minitest (5.26.2)
     net-imap (0.5.12)
       date
       net-protocol
@@ -207,10 +201,10 @@ PLATFORMS
   universal-java-25
 
 DEPENDENCIES
-  activerecord-jdbcpostgresql-adapter!
+  activerecord-jdbcpostgresql-adapter (~> 72)
   puma
   rails (~> 7.2)
   tzinfo-data
 
 BUNDLED WITH
-   2.6.9
+   2.7.2
